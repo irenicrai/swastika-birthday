@@ -61,7 +61,8 @@ header{
 h1{
     color:#d81b60;
     font-size:72px;
-    font-family:'Pacifico', 'Great Vibes', cursive;
+    font-family:'Arial Black', 'Helvetica', sans-serif;
+    font-weight:900;
     letter-spacing:2px;
     text-shadow:0 0 20px white, 0 0 35px rgba(255,105,180,0.35);
     animation:floatTitle 3s ease-in-out infinite;
@@ -215,4 +216,167 @@ footer{
     color:#c2185b;
     font-size:20px;
     animation:floatSoft 3.2s ease-in-out infinite;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    h1{
+        font-size:32px;
+        letter-spacing:0.5px;
+        text-shadow:0 0 15px white, 0 0 25px rgba(255,105,180,0.35);
+    }
+
+    h2{
+        font-size:18px;
+    }
+
+    .countdown{
+        gap:10px;
+        margin:15px;
+        flex-wrap:wrap;
+        max-width:200px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .countdown div{
+        width:calc(50% - 5px);
+        padding:15px;
+        border-radius:15px;
+        flex-basis:calc(50% - 5px);
+    }
+
+    .countdown span{
+        font-size:28px;
+    }
+
+    .countdown p{
+        font-size:12px;
+    }
+
+    .main{
+        flex-direction:column;
+        gap:20px;
+        padding:10px;
+    }
+
+    .message-box{
+        width:90%;
+        max-width:500px;
+        padding:20px;
+        border-radius:20px;
+    }
+
+    .message-box p{
+        font-size:16px;
+    }
+
+    .message-box h3{
+        font-size:18px;
+    }
+
+    .photos{
+        width:100%;
+    }
+
+    .photos img{
+        width:150px;
+        height:150px;
+    }
+
+    .cards{
+        gap:10px;
+        margin-top:20px;
+    }
+
+    .card{
+        width:100px;
+        padding:15px;
+        font-size:14px;
+        border-radius:15px;
+    }
+
+    .date-box{
+        width:90%;
+        max-width:500px;
+        margin:20px auto;
+        padding:20px;
+        font-size:20px;
+        border-radius:20px;
+    }
+
+    footer{
+        margin:20px;
+        font-size:16px;
+    }
+
+    header{
+        padding:15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1{
+        font-size:26px;
+        letter-spacing:0.3px;
+        text-shadow:0 0 12px white, 0 0 20px rgba(255,105,180,0.35);
+    }
+
+    h2{
+        font-size:16px;
+    }
+
+    .countdown{
+        gap:8px;
+        margin:10px;
+    }
+
+    .countdown div{
+        width:70px;
+        padding:12px;
+    }
+
+    .countdown span{
+        font-size:24px;
+    }
+
+    .countdown p{
+        font-size:10px;
+    }
+
+    .message-box{
+        width:95%;
+        padding:15px;
+    }
+
+    .message-box p{
+        font-size:14px;
+    }
+
+    .message-box h3{
+        font-size:16px;
+    }
+
+    .photos img{
+        width:120px;
+        height:120px;
+        border:6px solid white;
+    }
+
+    .card{
+        width:85px;
+        padding:12px;
+        font-size:12px;
+    }
+
+    .date-box{
+        width:95%;
+        font-size:18px;
+        padding:15px;
+    }
+
+    footer{
+        font-size:14px;
+        margin:15px;
+    }
 }
